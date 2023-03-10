@@ -1,12 +1,12 @@
-@REM author: —’≈Ê»ª
+@REM author: Autism
 @REM date: 2023/3/10
 @REM description: uninstall "360safe" application
 
 @echo off 
-@REM Õÿ’π¥Úø™
+@REM ÊãìÂ±ïÊâìÂºÄ
 setlocal enableextensions
 
-FOR /F "usebackq skip=2 tokens=1,2*" %%a IN (`REG QUERY "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\360∞≤»´Œ¿ ø" /v "UninstallString" 2^>nul`) DO (
+FOR /F "usebackq skip=2 tokens=1,2*" %%a IN (`REG QUERY "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\360ÂÆâÂÖ®Âç´Â£´" /v "UninstallString" 2^>nul`) DO (
    set UninstallString=%%c
 )
 
@@ -14,7 +14,7 @@ IF DEFINED UninstallString (
     echo Uninstalling...
    "%UninstallString%"
 )ELSE (
-   echo Not Found£°
+   echo Not FoundÔºÅ
 )
 
 pause
